@@ -14,7 +14,7 @@ const Navbar = () => {
         <Link href="/contact"><li className='cursor-pointer'>Contact Us</li></Link>
         <li className='flex gap-3'>
           <Link href="/shorten"><button className='bg-slate-400 shadow-lg p-3 py-2 rounded-lg font-bold cursor-pointer'>Try Now</button></Link>
-          <Link href="/github"><button className='bg-slate-400 shadow-lg p-3 py-2 rounded-lg font-bold cursor-pointer'>Github</button></Link>
+          <Link href={process.env.GITHUB_URL}><button className='bg-slate-400 shadow-lg p-3 py-2 rounded-lg font-bold cursor-pointer'>Github</button></Link>
         </li>
       </ul>
     </nav>

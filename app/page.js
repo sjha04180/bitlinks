@@ -21,7 +21,7 @@ export default function Home() {
           </p>
           <div className='flex gap-3 text-white mr-8'>
             <Link href="/shorten"><button className='bg-cyan-700 shadow-lg p-3 py-2 rounded-lg font-bold cursor-pointer'>Try Now</button></Link>
-            <Link href="/github"><button className='bg-cyan-700 shadow-lg p-3 py-2 rounded-lg font-bold cursor-pointer'>Github</button></Link>
+            <Link href={process.env.GITHUB_URL}><button className='bg-cyan-700 shadow-lg p-3 py-2 rounded-lg font-bold cursor-pointer'>Github</button></Link>
           </div>
         </div>
         <div className="flex justify-start relative">
